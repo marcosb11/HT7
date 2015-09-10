@@ -87,8 +87,8 @@ public class BinaryTree<V> {
             TreeMap pre = (TreeMap) precursor.getValue();
             TreeMap nod = (TreeMap) node.getValue();
             
-            String wordPre = pre.get(pre.firstEntry()).toString();
-            String wordNod = nod.get(nod.firstEntry()).toString();
+            String wordPre = pre.get(pre.firstKey()).toString();
+            String wordNod = nod.get(nod.firstKey()).toString();
             
             if(wordNod.length() >= wordPre.length()){
                 size = wordPre.length();
